@@ -6,7 +6,6 @@ if [ ! -f "$1" ]; then
 fi
 
 SYMBOLLINE=`sed -n '1,$ { /\[Symbols\]/= }' "$1"`
-OUTFILE=$1.idc
 
 echo "#include <idc.idc>
 
